@@ -1,11 +1,9 @@
 <?php
-require 'blowfish.php';
 $config = require "config.php";
-
-
+$database= $config["database"];
 require "vendor/autoload.php";
 
-$config = require "config.php";
+
 
 
 

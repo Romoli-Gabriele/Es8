@@ -12,9 +12,14 @@ class queryBuilder
         $statement->execute();
         return $statement->fetchAll(PDO::FETCH_CLASS, $intoClass);
     }
-    
+    function insertFilm($table, $film){
+        $sql = "insert into {$table} (titolo, valutazione) values ( '{$film['titolo']}' , {$film['valutazione']})";
+        $statement = $this->pdo->prepare($sql);
+        $statement->execute();
+    }
     function execute($sql){
         $statement = $this->pdo->prepare($sql);
         $statement->execute();
     }
+
 }

@@ -11,6 +11,11 @@ class ComposerStaticInit33fb9ceded9b907da7055de3bd8abb1e
         'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/composer/ClassLoader.php',
         'Composer\\Autoload\\ComposerStaticInit33fb9ceded9b907da7055de3bd8abb1e' => __DIR__ . '/..' . '/composer/autoload_static.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Connection' => __DIR__ . '/../..' . '/core/database/connection.php',
+        'Request' => __DIR__ . '/../..' . '/core/Request.php',
+        'film' => __DIR__ . '/../..' . '/core/film.php',
+        'queryBuilder' => __DIR__ . '/../..' . '/core/database/queryBuilder.php',
+        'router' => __DIR__ . '/../..' . '/core/router.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
